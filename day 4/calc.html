@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+  </head>
+  <body>
+    <center>
+      <table>
+        <tr>
+          <input type="display" id="display" />
+        </tr>
+        <tr>
+          <td><button onclick="key(this);">(</button></td>
+          <td><button onclick="key(this);">)</button></td>
+          <td><button onclick="key(this);">0</button></td>
+          <td></td>
+          <td><button id="clear" value="C" onclick="key(this);">C</button></td>
+          <td><button onclick="key(this);">B</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="key(this);">1</button></td>
+          <td><button onclick="key(this);">2</button></td>
+          <td><button onclick="key(this);">3</button></td>
+          <td></td>
+          <td><button onclick="key(this);">*</button></td>
+          <td><button onclick="key(this);">/</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="key(this);">4</button></td>
+          <td><button onclick="key(this);">5</button></td>
+          <td><button onclick="key(this);">6</button></td>
+          <td></td>
+          <td><button onclick="key(this);">+</button></td>
+          <td><button onclick="key(this);">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="key(this);">7</button></td>
+          <td><button onclick="key(this);">8</button></td>
+          <td><button onclick="key(this);">9</button></td>
+          <td></td>
+          <td><button onclick="key(this);">^</button></td>
+          <td><button onclick="key(this);">=</button></td>
+        </tr>
+      </table>
+    </center>
+    <script src="calc.js"></script>
+  </body>
+</html>
