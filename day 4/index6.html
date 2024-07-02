@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #err {
+        display: none;
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form method="get" action="index6_b.html">
+      <label for="username">username</label>
+      <input
+        onfocus="styleBorder(); "
+        onblur="revertBorder(); unameCheck();"
+        id="username"
+        name="username"
+        type="text"
+        placeholder="Enter your Name"
+        required
+      />
+      <span id="err">invalid name</span>
+      <br />
+      <br />
+      <label id="mail" for="email">email</label>
+      <input required type="email" />
+      <br />
+      <br />
+      <label for="pass1">password</label>
+      <input name="password1" id="password1" type="password" required />
+      <label for="pass2">repeat password</label>
+      <input id="password2" type="password" required />
+      <br />
+      <br />
+      <label for="cities">Choose :</label>
+      <select id="city" name="city">
+        <option value="mansoura">mansoura</option>
+        <option value="suez">suez</option>
+        <option value="cairo">cairo</option>
+        <option value="mansoura">mansoura</option>
+      </select>
+      <input id="checkbox" required type="checkbox" />
+      <label for="checkbox">I accept terms and conditions</label>
+
+      <input onclick="stop();" type="submit" value="register" />
+    </form>
+    <script src="script6.js"></script>
+  </body>
+</html>

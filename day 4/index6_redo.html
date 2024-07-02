@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="redo.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #err {
+        display: none;
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form method="get" action="index6_b_redo.html">
+      <label for="username">username</label>
+      <input
+        pattern="[A-Za-z0-9]{3,10}"
+        id="username"
+        name="username"
+        type="text"
+        placeholder="Enter your Name"
+        required
+      />
+      <span id="err">invalid name</span>
+      <br />
+      <br />
+      <label id="mail" for="email">email</label>
+      <input required type="email" />
+      <br />
+      <br />
+      <label for="pass1">password</label>
+      <input
+        pattern="(?=.*[A-Za-z0-9])(?=.*\d)[A-Za-z\d]{8,}"
+        name="password1"
+        id="password1"
+        type="password"
+        required
+        oninput="document.getElementById('password2').pattern = this.value"
+      />
+      <label for="pass2">repeat password</label>
+      <input
+        id="password2"
+        pattern="(?=.*[A-Za-z0-9])(?=.*\d)[A-Za-z\d]{8,}"
+        type="password"
+        required
+      />
+      <br />
+      <br />
+      <label for="cities">Choose :</label>
+      <select id="city" name="city">
+        <option value="mansoura">mansoura</option>
+        <option value="suez">suez</option>
+        <option value="cairo">cairo</option>
+        <option value="mansoura">mansoura</option>
+      </select>
+      <input id="checkbox" required type="checkbox" />
+      <label for="checkbox">I accept terms and conditions</label>
+
+      <input type="submit" value="register" />
+    </form>
+  </body>
+</html>

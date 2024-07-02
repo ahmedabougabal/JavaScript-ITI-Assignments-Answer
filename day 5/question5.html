@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Make a textbox where the user can enter user ID, and press display and then display the user with the given ID.  -->
+    <label for="text">enter username ID </label>
+    <input type="text" id="text" />
+    <br />
+    <br />
+    <button onclick="loadData();">load data</button>
+    <br />
+    <br />
+    <label for="result">RESULT </label>
+    <input
+      style="width: 220px"
+      type="text"
+      placeholder="name and id will be displayed here"
+      id="result"
+    />
+    <br />
+    <br />
+    <!-- loadData() -->
+    <select name="selectName" onchange="dispNameImg();" id="selectId">
+      <option value="name">fullname</option>
+    </select>
+    <p id="firstName"></p>
+    <p id="secondName"></p>
+    <img id="userImage" src="" alt="" />
+    <script src="question5.js"></script>
+  </body>
+</html>

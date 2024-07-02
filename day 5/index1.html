@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles1.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="get" action="redirect1.html">
+      <span id="err">enter a valid name below</span>
+      <br />
+      <label for="username">username</label>
+      <input
+        onfocus="styleBorder(); "
+        onblur="revertBorder(); unameCheck();"
+        id="username"
+        name="username"
+        type="text"
+        placeholder="Enter your Name"
+        required
+      />
+      <br />
+      <br />
+      <label id="mail" for="email">email</label>
+      <input required type="email" />
+      <br />
+      <br />
+      <label for="pass1">password</label>
+      <input name="password1" id="password1" type="password" required />
+      <br />
+      <br />
+      <label for="pass2">repeat password</label>
+      <input id="password2" type="password" required />
+      <br />
+      <br />
+      <!-- onclick="rememberUser();" -->
+
+      <input name="isItChecked" type="checkbox" id="myCheckbox" />
+      <label for="checked">remember me</label>
+      <br />
+      <br />
+      <label for="cities">Choose :</label>
+      <select id="city" name="city">
+        <option value="mansoura">mansoura</option>
+        <option value="suez">suez</option>
+        <option value="cairo">cairo</option>
+        <option value="mansoura">mansoura</option>
+      </select>
+      <input id="checkbox" required type="checkbox" />
+      <label for="checkbox">I accept terms and conditions</label>
+
+      <input onclick="stop();" type="submit" value="register" />
+    </form>
+
+    <script src="app1.js"></script>
+  </body>
+</html>
